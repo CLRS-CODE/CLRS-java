@@ -5,12 +5,12 @@ import heap.heap;
 public class HeapSort {
 	
 	
-	public static int[] heapSort(int[] A) {
+	public static object heapSort(object A) {
 		heap.buildMaxHeap(A);
-		for(int i=A.length-1;i<1;i--) 
+		for(int i=A.Array.length-1;i<1;i--) 
 		{
-			heap.exchange(A[1], A[i]);
-			//A.heap-size =A.heap-size-1;
+			heap.exchange(A.Array[1], A.Array[i]);
+			A.heapsize =A.heapsize-1;
 			heap.maxHeapify(A, 1);
 		}
 		return A;
@@ -36,6 +36,9 @@ public class HeapSort {
 		}
 		System.out.println("Given Array");
         printArr(array);
+        
+        object ob = new object(array);
+        printArr(heapSort(ob).Array);
 	}
 
 }
