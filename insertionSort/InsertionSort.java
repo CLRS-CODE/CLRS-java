@@ -1,12 +1,13 @@
 package insertionSort;
-
+//import statements
 import java.util.Scanner;
 
 public class InsertionSort {
 	
 	
 	
-	public static int[] insertionSort(int[] a) {
+	public static int[] insertionSort(int[] a) //function to perform insertion Sort
+         {
 		int key =0;
 		int i =0;
 		for(int j = 1;j <a.length;j++) {
@@ -26,7 +27,8 @@ public class InsertionSort {
 		
 	}
 	
-	public static void printArr(int[] a) {
+	public static void printArr(int[] a) //function to print the array
+        {
 		for(int i=0; i<a.length;i++) {
 
 		System.out.println(a[i]+ " ");
